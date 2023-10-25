@@ -1,0 +1,16 @@
+services:
+  app:
+    image: daxia2023/gonez:nginxw2
+    ports:
+     - "80:7860"
+    environment:
+      - SUB_NAME=$SUB_NAME
+      - NEZHA_SERVER=$NEZHA_SERVER
+      - NEZHA_PORT=$NEZHA_PORT
+      - NEZHA_KEY=$NEZHA_KEY
+      - NEZHA_TLS=$NEZHA_TLS
+      - CF_IP=$CF_IP
+      - PSWD=$PSWD
+      - VPATH=$VPATH
+      - UUID=$UUID
+      - SUB_URL=$SUB_URL
